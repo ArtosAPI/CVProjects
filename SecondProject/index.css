@@ -1,0 +1,87 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 84px;
+}
+
+body {
+  background-image: url("images/back-image.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-position-y: 0px;
+}
+
+.logo {
+  width: 140px;
+}
+
+nav {
+  padding-top: 25px;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+nav div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 35px;
+}
+
+.downldButn {
+  padding: 15px 35px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: none;
+  box-shadow: none;
+  background: linear-gradient(
+    67deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(175, 48, 157, 1) 42%,
+    rgba(181, 23, 180, 1) 59%,
+    rgba(205, 0, 255, 1) 100%
+  );
+  color: white;
+  cursor: pointer;
+  transition: 75ms;
+}
+
+.downldButn:active {
+  opacity: 50%;
+  box-shadow: 2.5px 2.5px 2.5px grey;
+}
+
+main {
+  padding-left: 10%;
+  padding-top: 100px;
+  display: flex;
+}
+
+.section1 {
+  padding-top: 75px;
+}
+
+.mainTextDescr {
+    margin-top: 20px;
+    margin-bottom: 55px;
+}
+
+.feature_img{
+    width: 530px;
+    position: absolute;
+    right: 20%;
+    bottom: 0px;
+}

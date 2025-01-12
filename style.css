@@ -1,0 +1,207 @@
+* {
+  font-family: "Overpass", serif;
+  color: white;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.heading1_bold {
+  color: rgb(226, 230, 238);
+  font-size: 48px;
+}
+
+.heading2_bold {
+  color: rgb(226, 230, 238);
+  font-size: 36px;
+}
+
+.heading3_bold {
+  color: rgb(226, 230, 238);
+  font-size: 27px;
+}
+
+.caption1 {
+  color: rgb(172, 177, 195);
+  font-size: 18px;
+}
+
+.body2_bold {
+  color: rgb(217, 223, 232);
+  font-size: 21px;
+}
+
+.secondary_body2_bold {
+  color: rgb(149, 170, 251);
+  font-size: 21px;
+}
+
+.gradient1 {
+  background: linear-gradient(90deg, rgb(164, 120, 232) 0%, rgb(81, 108, 247) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body {
+  display: flex;
+}
+
+aside {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-top: 72px;
+  padding-left: 60px;
+  padding-bottom: 72px;
+  padding-right: 60px;
+  width: 33.5%;
+  background-color: rgb(35, 35, 57);
+}
+aside .born_date {
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+aside .photo {
+  width: 144px;
+  height: 144px;
+  border-radius: 10%;
+  margin-bottom: 24px;
+}
+aside footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.hor_divider {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  opacity: 0.1;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.infos .info {
+  display: flex;
+  gap: 24px;
+}
+.infos .info .description {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+main {
+  flex-grow: 3;
+  width: 100%;
+  padding-top: 96px;
+  padding-right: 52px;
+  padding-bottom: 96px;
+  padding-left: 48px;
+  background-color: rgb(46, 46, 72);
+}
+main .content {
+  display: flex;
+  align-content: center;
+  gap: 48px;
+  height: 588px;
+}
+main .content .read_progress {
+  display: flex;
+  width: 48px;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+main .content .read_progress .point {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: rgb(35, 35, 57);
+}
+main .content .read_progress .point .point_inside {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: rgb(198, 150, 252);
+}
+main .content .read_progress .line {
+  width: 1.5px;
+  height: 100%;
+  background-color: rgb(35, 35, 57);
+}
+main .sections {
+  display: flex;
+  width: 1000px;
+  overflow: auto;
+  gap: 45px;
+  margin-top: 48px;
+  margin-right: 36px;
+  margin-left: 36px;
+}
+main .sections section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+main .sections section .sect_header {
+  margin-right: 99px;
+}
+main .sections section .cards .card {
+  display: flex;
+  align-items: center;
+  background-color: rgb(35, 35, 57);
+  gap: 24px;
+  height: 123px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+main .sections section .cards .card .vertical_card_divider {
+  background-color: white;
+  opacity: 0.1;
+  width: 1.5px;
+  height: 75px;
+}
+main .sections section .cards .card .vertical_layout {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+main .sections section .cards .card .horizontal_card_divider {
+  background-color: white;
+  opacity: 0.1;
+  width: 63px;
+  height: 1.5px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(35, 35, 57);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(172, 177, 195);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(217, 223, 232);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<aside>
+			<img src="images/i.webp" alt="" class="photo" />
+			<span class="heading1_bold">Тектов Павел</span>
+			<span class="caption1 born_date">17.12.2007</span>
+			<span class="heading2_bold gradient1"
+				>Junior Frontend разработчик</span
+			>
+			<div class="hor_divider"></div>
+			<div class="infos">
+                <div class="caption1">Как связаться</div>
+				<div class="info">
+					<img src="images/telegram.png" alt="" width="48px" height="48px" />
+					<div class="description">
+						<div class="caption1">Telegram</div>
+						<div class="body2_bold"">
+							<a
+								href="https://web.telegram.org/a/"
+								target="_blank"
+								rel="noopener noreferrer"
+                                onclick="copyText(this)"
+								>@PavTekt</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="info">
+					<img src="images/vk.png" alt="" width="48px" height="48px" />
+					<div class="description">
+						<div class="caption1">VK</div>
+						<div class="body2_bold">
+							<a
+								href="https://vk.com/pavtek"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Мой ВК</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="info">
+					<img
+						src="images/phone-call.png"
+						alt=""
+						width="48px"
+						height="48px" />
+					<div class="description">
+						<div class="caption1">Phone</div>
+						<div class="body2_bold">
+							<a href="tel:+79853876858">+7 985 387 6858</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hor_divider"></div>
+            <div class="infos">
+                <div class="caption1">Языки</div>
+				<div class="info">
+					<img src="images/russia_flag.png" alt="" width="48px" height="48px" />
+					<div class="description">
+						<div class="body2_bold">Русский</div>
+						<div class="caption1">
+							Родной
+						</div>
+					</div>
+				</div>
+				<div class="info">
+					<img src="images/england_flag.png" alt="" width="48px" height="48px" />
+					<div class="description">
+						<div class="body2_bold">English</div>
+						<div class="caption1">
+							B2
+						</div>
+					</div>
+				</div>
+			</div>
+            <footer>
+                Дизайн был взят из <a href="https://www.figma.com/design/PfRv7RIs0xz5hY3QEZiP2V/Supa-Resume---Light-%26-Dark-%5BFREE-Resume%2FCover-Letter%5D-(Community)?node-id=0-1&p=f&t=bd8TG20kHEtCvhYo-0" target="_blank" rel="noopener noreferrer" class="caption1">фигмы</a>
+            </footer>
+		</aside>
+		<main>
+            <div class="content">
+                <div class="read_progress">
+                    <div class="point"><div class="point_inside"></div></div>
+                    <div class="line"></div>
+                </div>
+				<div class="skills">
+					<span class="heading2_bold">Навыки</span>
+					<div class="sections">
+						<section>
+							<span class="body2_bold sect_header">Develoment</span>
+							<div class="cards">
+								<div class="card">
+									<span class="secondary_body2_bold">HTML</span>
+									<div class="vertical_card_divider">
+									</div>
+									<div class="vertical_layout">
+										<span class="secondary_body2_bold">CSS</span>
+										<div class="horizontal_card_divider">
+										</div>
+										<span class="secondary_body2_bold">JS</span>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="cards">
+								<div class="card">
+									<div class="vertical_layout">
+										<span class="secondary_body2_bold">React.js</span>
+										<div class="horizontal_card_divider">
+										</div>
+										<span class="secondary_body2_bold">SASS</span>
+									</div>
+									<span class="secondary_body2_bold">jQuery</span>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="cards">
+								<div class="card">
+									<span class="secondary_body2_bold">Git</span>
+									<div class="vertical_card_divider">
+									</div>
+									<div class="vertical_layout">
+										<span class="secondary_body2_bold">NPM</span>
+										<div class="horizontal_card_divider">
+										</div>
+										<span class="secondary_body2_bold">SQL</span>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+            </div>
+        </main>
+		<script src="index.js"></script>
+	</body>
+</html>

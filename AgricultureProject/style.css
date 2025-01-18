@@ -52,6 +52,7 @@ body {
   font-size: 50px;
   font-weight: 900;
   color: white;
+  line-height: 33px;
 }
 
 .MR1_heading3 {
@@ -61,9 +62,24 @@ body {
 }
 
 .MR_caption1 {
+  font-size: 18px;
+  color: rgb(135, 134, 128);
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.MR_caption2 {
   font-size: 16px;
   color: rgb(135, 134, 128);
   font-weight: 500;
+  line-height: 30px;
+}
+
+.MR_caption3 {
+  font-size: 14px;
+  color: rgb(135, 134, 128);
+  font-weight: 500;
+  line-height: 20px;
 }
 
 .header {
@@ -219,7 +235,7 @@ body {
   gap: 20px;
 }
 
-.discover_more_btn {
+.default_button {
   background-color: rgb(75, 175, 71);
   font-size: 14px;
   font-weight: bold;
@@ -227,8 +243,16 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 10px;
-  height: 58px;
-  width: 197px;
+  height: 60px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0px 50px;
+}
+
+.section_side_panel {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
 }
 
 main {
@@ -287,38 +311,31 @@ main .introduction .intr_images #intr2 {
   border: 10px solid white;
   border-radius: 140px;
 }
-main .introduction .intr_description {
-  display: flex;
-  flex-direction: column;
-  gap: 34px;
-  width: 600px;
-  height: 642px;
-}
-main .introduction .intr_description #GreenFontUnique {
+main .introduction .section_side_panel #GreenFontUnique {
   color: rgb(75, 175, 71);
   font-size: 26px;
   font-weight: 900;
 }
-main .introduction .intr_description .intr_hero {
+main .introduction .section_side_panel .intr_hero {
   display: flex;
   gap: 45px;
 }
-main .introduction .intr_description .intr_hero .intr_hero_descr {
+main .introduction .section_side_panel .intr_hero .intr_hero_descr {
   display: flex;
   gap: 24px;
   align-items: center;
 }
-main .introduction .intr_description .checkedmarks {
+main .introduction .section_side_panel .checkedmarks {
   gap: 14px;
 }
-main .introduction .intr_description .checkedmarks .checkedmark {
+main .introduction .section_side_panel .checkedmarks .checkedmark {
   display: flex;
   align-items: center;
   gap: 16px;
   font-size: 16px;
   font-weight: 600;
 }
-main .introduction .intr_description .checkedmarks .checkedmark img {
+main .introduction .section_side_panel .checkedmarks .checkedmark img {
   width: 16px;
   height: 16px;
 }
@@ -445,6 +462,8 @@ main .projects .projects_header {
 }
 main .projects .projects_cards {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 main .projects .projects_cards .project_card {
@@ -455,4 +474,131 @@ main .projects .projects_cards .project_card span {
   position: relative;
   top: -124px;
   left: 53px;
+}
+main .testimonials {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  background-color: rgb(248, 247, 240);
+  margin-top: 38px;
+  width: calc(100% - 15px);
+  height: 695px;
+}
+main .testimonials .section_side_panel {
+  margin-top: 106px;
+}
+main .testimonials .section_side_panel .MR_caption2 {
+  margin-top: -6px;
+  margin-bottom: 7px;
+}
+main .testimonials .testimonials_card {
+  margin-top: 113px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  background-color: white;
+  border-radius: 10px;
+  width: 770px;
+  height: 254px;
+}
+main .testimonials .testimonials_card .testimonials_card_main_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 23px;
+}
+main .testimonials .testimonials_card .testimonials_card_main_info span {
+  font-weight: 800;
+  font-size: 24px;
+}
+main .testimonials .testimonials_card .testimonials_card_main_info .stars {
+  display: flex;
+  align-items: center;
+  gap: 3.21px;
+}
+main .testimonials .testimonials_card .testimonials_card_main_info .stars img {
+  width: 16px;
+  height: 16px;
+}
+main .benefits {
+  margin-top: 120px;
+  display: flex;
+  gap: 15px;
+}
+main .benefits img {
+  width: 700px;
+  height: 733px;
+}
+main .benefits .section_side_panel {
+  justify-content: space-evenly;
+}
+main .benefits .section_side_panel span {
+  margin-top: -4px;
+}
+main .benefits .worms {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+main .benefits .worms .section_side_panel_worm {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+}
+main .benefits .worms .section_side_panel_worm img {
+  width: 40px;
+  height: 40px;
+  margin-top: 7px;
+}
+main .benefits .worms .section_side_panel_worm .section_side_panel_worm_main {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5px;
+}
+main .news {
+  margin-top: 113px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .news .news_cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 30px;
+}
+main .news .news_cards .news_card .news_card_main {
+  width: 100%;
+  background-color: white;
+  height: 214px;
+  position: relative;
+  top: -214px;
+  box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.05);
+  border-top-style: none;
+  text-align: center;
+}
+main .news .news_cards .news_card .news_card_main .news_card_date {
+  position: relative;
+  top: -20px;
+  justify-self: center;
+  background-color: rgb(75, 175, 71);
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0px 25px;
+  line-height: 40px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: white;
+  font-weight: 700;
+}
+main .news .news_cards .news_card .news_card_main .author_comments {
+  justify-self: center;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+main .news .news_cards .news_card .news_card_main .author_comments .author_comments_info {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

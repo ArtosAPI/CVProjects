@@ -63,6 +63,7 @@ body {
 	font-size: 50px;
 	font-weight: 900;
 	color: white;
+	line-height: 33px;
 }
 .MR1_heading3 {
 	font-size: 30px;
@@ -71,9 +72,24 @@ body {
 }
 
 .MR_caption1 {
+	font-size: 18px;
+	color: $greyColor;
+	font-weight: 500;
+	line-height: 36px;
+}
+
+.MR_caption2 {
 	font-size: 16px;
 	color: $greyColor;
 	font-weight: 500;
+	line-height: 30px;
+}
+
+.MR_caption3 {
+	font-size: 14px;
+	color: $greyColor;
+	font-weight: 500;
+	line-height: 20px;
 }
 
 .header {
@@ -253,7 +269,7 @@ body {
 	}
 }
 
-.discover_more_btn {
+.default_button {
 	background-color: $tertiaryColor;
 	font-size: 14px;
 	font-weight: bold;
@@ -261,8 +277,15 @@ body {
 	border: none;
 	cursor: pointer;
 	border-radius: 10px;
-	height: 58px;
-	width: 197px;
+	height: 60px;
+	width: max-content;
+	padding: 0px 50px;
+}
+
+.section_side_panel {
+	display: flex;
+	flex-direction: column;
+	gap: 34px;
 }
 
 main {
@@ -327,13 +350,7 @@ main {
 			}
 		}
 
-		.intr_description {
-			display: flex;
-			flex-direction: column;
-			gap: 34px;
-			width: 600px;
-			height: 642px;
-
+		.section_side_panel {
 			#GreenFontUnique {
 				color: $tertiaryColor;
 				font-size: 26px;
@@ -384,7 +401,7 @@ main {
 			align-items: center;
 			width: 100%;
 			height: 406px;
-			background-color: rgba(248, 247, 240, 1);
+			background-color: $mainColor;
 			margin-right: 15px;
 
 			.services_header {
@@ -512,15 +529,169 @@ main {
 
 		.projects_cards {
 			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
 			gap: 10px;
+
 			.project_card {
 				display: flex;
 				flex-direction: column;
-
 				span {
 					position: relative;
 					top: -124px;
 					left: 53px;
+				}
+			}
+		}
+	}
+
+	.testimonials {
+		display: flex;
+		justify-content: center;
+		gap: 70px;
+
+		background-color: $mainColor;
+		margin-top: 38px;
+		width: calc(100% - 15px);
+		height: 695px;
+
+		.section_side_panel {
+			margin-top: 106px;
+
+			.MR_caption2 {
+				margin-top: -6px;
+				margin-bottom: 7px;
+			}
+		}
+
+		.testimonials_card {
+			margin-top: 113px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 45px;
+			background-color: white;
+			border-radius: 10px;
+			width: 770px;
+			height: 254px;
+
+			.testimonials_card_main_info {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 23px;
+
+				span {
+					font-weight: 800;
+					font-size: 24px;
+				}
+
+				.stars {
+					display: flex;
+					align-items: center;
+					gap: 3.21px;
+
+					img {
+						width: 16px;
+						height: 16px;
+					}
+				}
+			}
+		}
+	}
+
+	.benefits {
+		margin-top: 120px;
+		display: flex;
+		gap: 15px;
+
+		img {
+			width: 700px;
+			height: 733px;
+		}
+
+		.section_side_panel {
+			justify-content: space-evenly;
+
+			span {
+				margin-top: -4px;
+			}
+		}
+
+		.worms {
+			display: flex;
+			flex-direction: column;
+			gap: 23px;
+
+			.section_side_panel_worm {
+				display: flex;
+				align-items: flex-start;
+				gap: 25px;
+
+				img {
+					width: 40px;
+					height: 40px;
+					margin-top: 7px;
+				}
+
+				.section_side_panel_worm_main {
+					display: flex;
+					flex-direction: column;
+					gap: 4.5px;
+				}
+			}
+		}
+	}
+
+	.news {
+		margin-top: 113px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.news_cards {
+			display: flex;
+			justify-content: center;
+			margin-top: 50px;
+			gap: 30px;
+
+			.news_card {
+
+				.news_card_main {
+					width: 100%;
+					background-color: white;
+					height: 214px;
+					position: relative;
+					top: -214px;
+					box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.05);
+					border-top-style: none;
+					text-align: center;
+
+					.news_card_date {
+						position: relative;
+						top: -20px;
+						justify-self: center;
+						background-color: $tertiaryColor;
+						width: max-content;
+						padding: 0px 25px;
+						line-height: 40px;
+						border-radius: 10px;
+						font-size: 14px;
+						color: white;
+						font-weight: 700;
+					}
+
+					.author_comments {
+						justify-self: center;
+						display: flex;
+						gap: 15px;
+						margin-bottom: 10px;
+
+						.author_comments_info{
+							display: flex;
+							align-items: center;
+						}
+					}
 				}
 			}
 		}

@@ -1,14 +1,13 @@
-$mainColor: rgba(248, 247, 240, 1);
-$secondaryColor: rgba(238, 192, 68, 1);
-$tertiaryColor: rgba(75, 175, 71, 1);
-$darkColor: rgba(31, 30, 23, 1);
-$greyColor: rgba(135, 134, 128, 1);
+@import "common_style.scss";
 
 .GreenFont {
 	font-size: 20px;
 }
 
 .hero {
+	position: relative;
+	top: -20.5px;
+	z-index: -1;
 	height: 326px;
 	background-image: url("/about_images/hero_about.png");
 	display: flex;
@@ -49,6 +48,7 @@ main {
 	.agr_market {
 		display: flex;
 		align-items: center;
+		margin-bottom: 120px;
 		gap: 135px;
 
 		.images {
@@ -101,6 +101,160 @@ main {
 					img {
 						width: 16px;
 						height: 16px;
+					}
+				}
+			}
+		}
+	}
+
+	.section_explanation_about {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		width: calc(100% - 15px);
+		height: 800px;
+		background-image: url(/images/section1.png);
+
+		.play {
+			margin-top: 170px;
+		}
+
+		.MR1_heading1 {
+			margin-top: 95px;
+			justify-content: center;
+			text-align: center;
+		}
+
+		.section_explanation_about_article {
+			margin-top: 107.5px;
+			background-color: $darkColor;
+			width: 100%;
+			height: 185px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 127.5px;
+		}
+	}
+
+	.testimonials_about {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 50.2px;
+		width: calc(100% - 15px);
+		height: 661.5px;
+		margin-bottom: 113px;
+		background-image: url("/images/testimonials_about.png");
+
+		.testimonials_about_header {
+			margin-top: 113px;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.testimonials_about_cards {
+			display: flex;
+			gap: 100px;
+
+			.testimonials_about_card {
+				background-color: white;
+				width: 500px;
+				height: 285px;
+				position: relative;
+
+				.testimonials_about_card_image {
+					position: absolute;
+					width: 140px;
+					height: 183px;
+					top: 51px;
+					left: -70px;
+
+					.sircley {
+						position: absolute;
+						top: 65.5px;
+						left: 115px;
+						width: 50px;
+						height: 50px;
+						border-radius: 100%;
+						background-color: $tertiaryColor;
+					}
+				}
+
+				.testimonials_about_card_maininfo {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-end;
+					gap: 6px;
+					margin-top: 38px;
+					margin-right: 51px;
+
+					.testimonials_about_card_maininfo_name {
+						display: flex;
+						flex-direction: column;
+						align-items: flex-end;
+					}
+				}
+			}
+		}
+	}
+
+	.farmers {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 50.2px;
+
+		.farmers_header {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.farmers_cards {
+			display: flex;
+			gap: 30px;
+
+			.farmers_card {
+				position: relative;
+				width: 370px;
+				height: 440px;
+
+				.farmer_card_info {
+					position: absolute;
+					box-shadow: -5px 0px 10px 0 rgba(0, 0, 0, 0.1);
+					bottom: 0px;
+					right: 0px;
+					width: 245px;
+					height: 90px;
+					border-top-left-radius: 10px;
+					border-bottom-left-radius: 10px;
+
+					box-sizing: border-box;
+					padding-top: 23px;
+					padding-right: 61px;
+
+					display: flex;
+					flex-direction: column;
+					align-items: flex-end;
+
+					background-color: white;
+
+					.share_farmer {
+						position: absolute;
+						left: -25px;
+						width: 50px;
+						height: 50px;
+						background-color: $tertiaryColor;
+						border-radius: 10px;
+
+						img {
+							margin: 4.44px 3.56px 2.69px 3.56px;
+							width: 42.87px;
+							height: 42.87px;
+						}
 					}
 				}
 			}

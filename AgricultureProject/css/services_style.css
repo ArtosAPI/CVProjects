@@ -480,4 +480,90 @@ main .services_matters .logos {
 main .services_matters .logos img {
   width: 190px;
   height: 75px;
+}
+main .section_explanation_services {
+  position: relative;
+  padding-top: 120px;
+  box-sizing: border-box;
+  width: calc(100% - 15px);
+  height: 646px;
+  background-image: url(/images/section1.png);
+}
+main .section_explanation_services .section_explanation_services_top {
+  display: flex;
+  justify-content: center;
+  gap: 533px;
+}
+main .section_explanation_services .play {
+  margin-top: 93px;
+}
+main .section_explanation_services .CBYG_default {
+  position: absolute;
+  top: 363px;
+  right: 522px;
+  font-size: 30px;
+}
+main .section_explanation_services .section_explanation_services_articles {
+  position: absolute;
+  bottom: -290px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+main .section_explanation_services .section_explanation_services_articles .section_explanation_services_article {
+  position: relative;
+}
+main .section_explanation_services .section_explanation_services_articles .section_explanation_services_article img {
+  border-radius: 10px;
+  width: 370px;
+  height: 359px;
+}
+main .section_explanation_services .section_explanation_services_articles .section_explanation_services_article .section_explanation_services_article_header {
+  position: absolute;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+}
+main .work {
+  margin-top: 490px;
+  display: flex;
+  gap: 85px;
+  margin-bottom: 120px;
+}
+main .work .section_side_panel {
+  gap: 0px;
+}
+main .work .MR_caption2 {
+  margin-top: 30px;
+}
+main .work .work_cards {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+main .work .work_cards .work_card:nth-child(1) {
+  background-color: rgb(75, 175, 71);
+}
+main .work .work_cards .work_card:nth-child(2) {
+  background-color: rgb(197, 206, 56);
+}
+main .work .work_cards .work_card:nth-child(3) {
+  background-color: rgb(238, 192, 68);
+}
+main .work .work_cards .work_card {
+  width: 170px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }/*# sourceMappingURL=services_style.css.map */
